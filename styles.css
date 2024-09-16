@@ -1,0 +1,123 @@
+/* Cambiar el color de fondo de toda la página */
+body {
+    background-image: url('imagenes/2822954.webp'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    /*background-repeat: no-repeat; /* Evita que la imagen se repita */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Posicionamiento del selector en la esquina superior izquierda */
+#selector-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+/* El de la esquina a la izquierda */
+#selector-container h1 {
+    font-size: 14px; /* Tamaño más pequeño para el título */
+    margin: 0;
+    padding: 10px; /* Agrega algo de espacio alrededor del texto */
+    background-color: #ffb75c; /* Color de fondo para el título */
+    color: #1e1e1e; /* Color del texto */
+    border-radius: 5px; /* Opcional: Agrega bordes redondeados */
+}
+
+#selector-container select {
+    padding: 8px;
+    font-size: 11px;
+    border: 1px solid #abd8ff;
+    border-radius: 0px;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 600px;
+    margin: 100px auto; /* Añadimos un margen superior para que no se solape con el selector */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* Estilos generales para los inputs */
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Restablece el ancho general de los inputs */
+    box-sizing: border-box;
+}
+
+/* Estilos específicos para el input de tipo date */
+input[type="date"] {
+    width: 55%; /* Solo el input de tipo date tendrá este ancho */
+}
+
+/* Estilos específicos para el input de tipo number */
+input[type="number"] {
+    width: 55%; /* Solo el input de tipo number tendrá este ancho */
+}
+
+/* Estilos para el contenedor de input y botón */
+.input-button-container {
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos a los extremos del contenedor */
+    align-items: center; /* Alinea verticalmente el input y el botón */
+    margin-bottom: 10px; /* Espacio debajo del contenedor */
+}
+
+/* Estilos para el botón */
+button {
+    padding: 10px 20px;
+    background-color: #ffb75c;
+    color: rgb(37, 37, 37);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Cambia el hover para el botón */
+button:hover {
+    background-color: #ffc681;
+}
+
+.form-section {
+    margin-top: 20px;
+}
+
+#rfc-result {
+    margin-top: 20px;
+    background-color: #ffb75c;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+#user-info {
+    margin-top: 20px;
+    background-color: #ffb75c;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: start;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}

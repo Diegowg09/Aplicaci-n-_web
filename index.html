@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar RFC o Consultar API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Selector de opciones fuera del contenedor -->
+    <div id="selector-container">
+        <h1>Seleccione una opción: </h1>
+        <select id="option-selector">
+            <option value="rfc">Generar RFC</option>
+            <option value="api">Consultar API</option>
+        </select>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Formulario para generar RFC -->
+        <div id="rfc-form" class="form-section">
+            <h2>Generar RFC</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <label for="apellidoPaterno">Apellido Paterno:</label>
+            <input type="text" id="apellidoPaterno" placeholder="Apellido Paterno">
+            <label for="apellidoMaterno">Apellido Materno:</label>
+            <input type="text" id="apellidoMaterno" placeholder="Apellido Materno">
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento">
+            <button id="generar-rfc">Generar RFC</button>
+            <div id="rfc-result">
+                <!-- El resultado del RFC se mostrará aquí -->
+            </div>
+        </div>
+
+        <!-- Formulario para consultar API -->
+        <div id="api-form" class="form-section" style="display: none;">
+            <h2>Ajax - API REST</h2>
+            <label for="user-id">Ingrese el ID del usuario:</label>
+            <input type="number" id="user-id" min="1" placeholder="Ejemplo: 7">
+            <button id="cargar-usuario">Cargar Usuario</button>
+            <div id="user-info">
+                <!-- El nombre y el correo del usuario se mostrarán aquí -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
